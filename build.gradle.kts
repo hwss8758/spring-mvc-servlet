@@ -23,6 +23,10 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	//providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+
+	// jsp
+	implementation("org.apache.tomcat.embed:tomcat-embed-jasper")
+	implementation("javax.servlet:jstl")
 }
 
 tasks.withType<KotlinCompile> {

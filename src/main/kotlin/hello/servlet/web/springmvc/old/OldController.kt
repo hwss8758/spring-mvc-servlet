@@ -6,10 +6,10 @@ import org.springframework.web.servlet.mvc.Controller
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
-@Component("/springmvc/old-controller")
+@Component("/springmvc/ ")
 class OldController : Controller {
     override fun handleRequest(request: HttpServletRequest, response: HttpServletResponse): ModelAndView? {
         println("OldController.handleRequest")
-        return null
+        return ModelAndView("new-form")
     }
 }
